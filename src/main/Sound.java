@@ -1,6 +1,5 @@
 package main;
 
-import java.io.IOException;
 import java.net.URL;
 
 import javax.sound.sampled.AudioInputStream;
@@ -33,7 +32,7 @@ public class Sound {
             clip = AudioSystem.getClip();
             clip.open(ais);
 
-        } catch(Exception e){
+        } catch(Exception _){
 
         }
     }
