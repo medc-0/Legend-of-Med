@@ -1,6 +1,7 @@
 package main;
 
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
@@ -9,7 +10,14 @@ public class Main {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("2D Adventure Game");
+        window.setTitle("Legend of Java");
+
+        try {
+            ImageIcon icon = new ImageIcon("./player/boy_down_1.png");
+            window.setIconImage(icon.getImage());
+        } catch (Exception e) {
+            System.out.println("Image not found, using default");
+        }
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
