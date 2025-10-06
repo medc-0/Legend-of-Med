@@ -11,7 +11,7 @@ public class OBJ_Dstone_Axe extends Entity {
         type = type_axe;
         typeAxe = 5;
         name = "Dark Stone Axe";
-        down1 = setup("/objects/dark_stone_axe", gp.tileSize,gp.tileSize);
+        down1 = setup("/objects/dark_stone_axe", gp.tileSize, gp.tileSize);
         attackValue = 6;
         description = "[ " + name + " ]\nAn Very Strong \nAxe Used To \nCut Trees.";
 

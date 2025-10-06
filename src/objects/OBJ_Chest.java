@@ -6,12 +6,12 @@ import main.GamePanel;
 public class OBJ_Chest extends Entity {
 
 
-    public OBJ_Chest(GamePanel gp){
-            super(gp);
+    public OBJ_Chest(GamePanel gp) {
+        super(gp);
 
-            name = "Chest";
-            down1 = setup("/objects/chesto",gp.tileSize,gp.tileSize);
+        name = "Chest";
+        down1 = setup("/objects/chesto", gp.tileSize, gp.tileSize);
 
-            collision = true;
-        }
+        collision = true;
     }
+}

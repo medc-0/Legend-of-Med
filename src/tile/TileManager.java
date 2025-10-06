@@ -20,7 +20,7 @@ public class TileManager {
     ArrayList<String> fileNames = new ArrayList<>();
     ArrayList<String> collisionStatus = new ArrayList<>();
 
-    public TileManager(GamePanel gp){
+    public TileManager(GamePanel gp) {
 
         this.gp = gp;
 
@@ -32,12 +32,12 @@ public class TileManager {
         String line;
 
         try {
-            while((line = br.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 fileNames.add(line);
                 collisionStatus.add(br.readLine());
             }
             br.close();
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -63,25 +63,25 @@ public class TileManager {
         loadMap("/maps/mainmap02.txt");
     }
 
-    public void getTileImage(){
+    public void getTileImage() {
 
-        for(int i = 0; i < fileNames.size(); i++) {
+        for (int i = 0; i < fileNames.size(); i++) {
 
             String fileName;
             boolean collision;
 
             fileName = fileNames.get(i);
 
-            if(collisionStatus.get(i).equals("true")) {
+            if (collisionStatus.get(i).equals("true")) {
                 collision = true;
-            }
-            else{
+            } else {
                 collision = false;
             }
             setup(i, fileName, collision);
         }
 
     }
+
     public void setup(int index, String imagePath, boolean collision) {
 
         UtilityTool uTool = new UtilityTool();
@@ -92,24 +92,25 @@ public class TileManager {
             tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
             tile[index].collision = collision;
 
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public void loadMap(String filePath){
 
-        try{
+    public void loadMap(String filePath) {
+
+        try {
             InputStream is = getClass().getResourceAsStream(filePath);
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
             int col = 0;
             int row = 0;
 
-            while(col < gp.maxWorldCol && row < gp.maxWorldRow){
+            while (col < gp.maxWorldCol && row < gp.maxWorldRow) {
 
                 String line = br.readLine();
 
-                while( col < gp.maxWorldCol){
+                while (col < gp.maxWorldCol) {
 
                     String numbers[] = line.split(" ");
 
@@ -118,23 +119,24 @@ public class TileManager {
                     mapTileNum[col][row] = num;
                     col++;
                 }
-                if(col == gp.maxWorldCol){
+                if (col == gp.maxWorldCol) {
                     col = 0;
                     row++;
                 }
             }
             br.close();
 
-        } catch(Exception e){
+        } catch (Exception e) {
 
         }
     }
-    public void draw(Graphics2D g2){
+
+    public void draw(Graphics2D g2) {
 
         int worldCol = 0;
         int worldRow = 0;
 
-        while(worldCol < gp.maxWorldCol && worldRow < gp.maxWorldRow){
+        while (worldCol < gp.maxWorldCol && worldRow < gp.maxWorldRow) {
 
             int tileNum = mapTileNum[worldCol][worldRow];
 
@@ -157,7 +159,7 @@ public class TileManager {
 
             worldCol++;
 
-            if(worldCol == gp.maxWorldCol){
+            if (worldCol == gp.maxWorldCol) {
                 worldCol = 0;
                 worldRow++;
             }

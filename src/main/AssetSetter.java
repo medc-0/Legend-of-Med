@@ -9,7 +9,7 @@ public class AssetSetter {
     GamePanel gp;
     public boolean changer = false;
 
-    public AssetSetter(GamePanel gp){
+    public AssetSetter(GamePanel gp) {
         this.gp = gp;
     }
 

@@ -11,7 +11,7 @@ public class OBJ_Axe extends Entity {
         type = type_axe;
         typeAxe = 1;
         name = "Starter Axe";
-        down1 = setup("/objects/wood_axe", gp.tileSize,gp.tileSize);
+        down1 = setup("/objects/wood_axe", gp.tileSize, gp.tileSize);
         attackValue = 2;
         description = "[ " + name + " ]\nAn Old Axe Used \nTo Cut Trees.";
 

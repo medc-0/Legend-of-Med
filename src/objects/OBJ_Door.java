@@ -7,13 +7,13 @@ public class OBJ_Door extends Entity {
 
     GamePanel gp;
 
-    public OBJ_Door(GamePanel gp){
+    public OBJ_Door(GamePanel gp) {
         super(gp);
         this.gp = gp;
 
         type = type_obstacle;
         name = "Door";
-        down1 = setup("/objects/Door",gp.tileSize,gp.tileSize);
+        down1 = setup("/objects/Door", gp.tileSize, gp.tileSize);
         collision = true;
 
         solidArea.x = 0;

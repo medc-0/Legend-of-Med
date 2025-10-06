@@ -26,7 +26,7 @@ public class OBJ_HealPotion extends Entity {
         gp.ui.currentDialogue = "You drink the " + name + "!\n"
                 + "Your life Has recovered by " + value + ".";
         gp.player.life += value;
-        if(gp.player.life > gp.player.maxLife) {
+        if (gp.player.life > gp.player.maxLife) {
             gp.player.life = gp.player.maxLife;
         }
         gp.playSE(2);

@@ -12,7 +12,7 @@ public class OBJ_Iron_Axe extends Entity {
         type = type_axe;
         typeAxe = 2;
         name = "Iron Axe";
-        down1 = setup("/objects/axe", gp.tileSize,gp.tileSize);
+        down1 = setup("/objects/axe", gp.tileSize, gp.tileSize);
         attackValue = 3;
         description = "[ " + name + " ]\nAn useful Axe Used \nTo Cut Trees.";
 

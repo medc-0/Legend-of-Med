@@ -13,7 +13,7 @@ public class Sound {
 
     public Sound() {
 
-        soundURL[0] = getClass().getResource("/sound/Dungeon.wav");
+        soundURL[0] = getClass().getResource("/sound/dooropen.wav");
         soundURL[1] = getClass().getResource("/sound/coin.wav");
         soundURL[2] = getClass().getResource("/sound/powerup.wav");
         soundURL[3] = getClass().getResource("/sound/unlock.wav");
@@ -27,12 +27,12 @@ public class Sound {
 
     public void setFile(int i) {
 
-        try{
+        try {
             AudioInputStream ais = AudioSystem.getAudioInputStream(soundURL[i]);
             clip = AudioSystem.getClip();
             clip.open(ais);
 
-        } catch(Exception _){
+        } catch (Exception _) {
 
         }
     }
