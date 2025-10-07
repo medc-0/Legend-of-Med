@@ -11,7 +11,7 @@ public class OBJ_Diamond_Sword extends Entity {
         type = type_sword;
         typeSword = 3;
         name = "Diamond Sword";
-        down1 = setup("/objects/diamond_sword", gp.tileSize, gp.tileSize);
+        down1 = setup("/weapons/diamond_sword", gp.tileSize, gp.tileSize);
         attackValue = 4;
         description = "[ " + name + " ]\nVery Sharp! \nOnly For Advanced.";
         attackArea.width = 42;

@@ -11,7 +11,7 @@ public class OBJ_Iron_Sword extends Entity {
         type = type_sword;
         typeSword = 2;
         name = "Iron Sword";
-        down1 = setup("/objects/iron_sword", gp.tileSize, gp.tileSize);
+        down1 = setup("/weapons/iron_sword", gp.tileSize, gp.tileSize);
         attackValue = 4;
         description = "[ " + name + " ]\nAn New sword Used \nTo fight With.";
         attackArea.width = 38;

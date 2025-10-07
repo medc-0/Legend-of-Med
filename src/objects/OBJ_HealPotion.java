@@ -15,7 +15,7 @@ public class OBJ_HealPotion extends Entity {
 
         type = type_consumable;
         name = "Healing Potion I ";
-        down1 = setup("/objects/potion_red", gp.tileSize, gp.tileSize);
+        down1 = setup("/items/potion_red", gp.tileSize, gp.tileSize);
         defenseValue = 1;
         description = "[ " + name + " ]\nHealing Potion: \nHeals 5 Hearts!";
     }

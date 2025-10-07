@@ -11,7 +11,7 @@ public class OBJ_Diamond_Axe extends Entity {
         type = type_axe;
         typeAxe = 3;
         name = "Diamond Axe";
-        down1 = setup("/objects/diamond_axe", gp.tileSize, gp.tileSize);
+        down1 = setup("/weapons/diamond_axe", gp.tileSize, gp.tileSize);
         attackValue = 4;
         description = "[ " + name + " ]\nAn useful Axe Used \nTo Cut Trees.";
 

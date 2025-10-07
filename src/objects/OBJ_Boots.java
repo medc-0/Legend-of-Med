@@ -12,7 +12,7 @@ public class OBJ_Boots extends Entity {
         super(gp);
 
         name = "Boots";
-        down1 = setup("/objects/boots", gp.tileSize, gp.tileSize);
+        down1 = setup("/items/boots", gp.tileSize, gp.tileSize);
 
         solidArea.x = 0;
         solidArea.y = 16;
