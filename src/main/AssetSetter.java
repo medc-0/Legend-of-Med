@@ -16,6 +16,22 @@ public class AssetSetter {
     public void setObject() {
 
         int i = 0;
+
+        gp.obj[i] = new OBJ_Axe(gp);
+        gp.obj[i].worldX = gp.tileSize * 44;
+        gp.obj[i].worldY = gp.tileSize * 62;
+        i++;
+        gp.obj[i] = new OBJ_Boots(gp);
+        gp.obj[i].worldX = gp.tileSize * 42;
+        gp.obj[i].worldY = gp.tileSize * 63;
+        i++;
+        gp.obj[i] = new OBJ_HealPotion(gp);
+        gp.obj[i].worldX = gp.tileSize * 46;
+        gp.obj[i].worldY = gp.tileSize * 63;
+        i++;
+        gp.obj[i] = new OBJ_Diamond_Sword(gp);
+        gp.obj[i].worldX = gp.tileSize * 42;
+        gp.obj[i].worldY = gp.tileSize * 66;
     }
 
     public void setNPC() {
@@ -50,4 +66,5 @@ public class AssetSetter {
         gp.monster[i].worldX = gp.tileSize * 26;
         gp.monster[i].worldY = gp.tileSize * 66;
     }
+
 }
