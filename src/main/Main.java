@@ -13,7 +13,7 @@ public class Main {
         window.setTitle("Legend of Java");
 
         try {
-            ImageIcon icon = new ImageIcon("./player/boy_down_1.png");
+            ImageIcon icon = new ImageIcon("res/player/boy_down_1.png");
             window.setIconImage(icon.getImage());
         } catch (Exception e) {
             System.out.println("Image not found, using default");
