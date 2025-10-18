@@ -37,7 +37,7 @@ public class EventHandler {
 
     public void checkEvent() {
 
-        // checkt ob der spieler mehr als 1 tile vom letzten event entfernt ist.
+        // check ob der spieler mehr als 1 tile vom letzten event entfernt ist.
         int xDistance = Math.abs(gp.player.worldX - previousEventX);
         int yDistance = Math.abs(gp.player.worldY - previousEventY);
         int distance = Math.max(xDistance, yDistance);
@@ -113,7 +113,7 @@ public class EventHandler {
 
         gp.gameState = gameState;
         gp.playSE(8);
-        gp.ui.currentDialogue = "Nice Teleported!";
+        gp.ui.currentDialogue = "Teleport!";
         gp.player.worldX = gp.tileSize * 26;
         gp.player.worldY = gp.tileSize * 16;
     }
