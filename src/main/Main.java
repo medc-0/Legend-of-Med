@@ -10,7 +10,7 @@ public class Main {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("Legend of Jasza");
+        window.setTitle("Legends of Yui");
 
         try {
             ImageIcon icon = new ImageIcon("res/player/boy_down_1.png");
