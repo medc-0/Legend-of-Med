@@ -10,6 +10,6 @@ public class OBJ_Key extends Entity {
 
         name = "Key";
         down1 = setup("/items/key", gp.tileSize, gp.tileSize);
-        description = "[ " + name + " ]\nUsed to open normal\nDoors!";
+        description = "[ " + name + " ]\nUsed to open\nDoors!";
     }
 }

@@ -16,7 +16,7 @@ public class Player extends Entity {
     KeyHandler keyH;
     public final int screenX;
     public final int screenY;
-    // public int hasKey = 0;
+    public int hasKey = 0;
     int standCounter = 0;
     public boolean attackCanceled = false;
     public ArrayList<Entity> inventory = new ArrayList<>();

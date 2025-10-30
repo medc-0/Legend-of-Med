@@ -31,10 +31,10 @@ public class NPC_OldMan extends Entity {
 
     public void setDialogue() {
 
-        dialogues[0] = "Hello, I see You are a Fighter!";
-        dialogues[1] = "Come back once you got a \nDark stone droplet.";
-        dialogues[2] = "Hello, I see You are a Survivor!";
-        dialogues[3] = "This might help you On your Journey.";
+        dialogues[0] = "Hello, Young warrior.!";
+        dialogues[1] = "How did you land here?.";
+        dialogues[2] = "I was long ago\nStranded here..";
+        dialogues[3] = "This might help you\non your journey.";
         dialogues[4] = "Well good luck on you.";
     }
 
@@ -66,7 +66,6 @@ public class NPC_OldMan extends Entity {
 
     public void speak() {
         // Character spezifische antworten (z.b hast ein schwert) : 'Oh ich sehe du hast ein schwert!'.
-
         super.speak();
     }
 }

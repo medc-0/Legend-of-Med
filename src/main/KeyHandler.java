@@ -156,7 +156,7 @@ public class KeyHandler implements KeyListener {
             }
         }
         if (code == KeyEvent.VK_R) {
-            gp.tileM.loadMap("/maps/worldV2.txt");
+            gp.tileM.loadMap("/maps/mainmap02.txt");
         }
     }
 

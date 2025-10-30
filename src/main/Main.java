@@ -10,7 +10,7 @@ public class Main {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("Legend of Kai");
+        window.setTitle("Legend of Med");
 
         try {
             ImageIcon icon = new ImageIcon("res/player/boy_down_1.png");
