@@ -10,7 +10,7 @@ public class Main {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("Legends of Yui");
+        window.setTitle("Legend of Kai");
 
         try {
             ImageIcon icon = new ImageIcon("res/player/boy_down_1.png");
